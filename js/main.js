@@ -4,7 +4,7 @@ $(function () {
   // $('.openButton').on('click', function() {
   //   $('.sidebar.top').slideToggle(700);
   // })
-  //$('.openButton').hide();
+  $('.openButton').hide();
 
   // $(".openButton").click(function(e) {
   //     e.preventDefault();

@@ -23,7 +23,7 @@ html, body {
   padding: 30px;
   font-size: 2em;
   text-align: center;
-  z-index: 1;
+  z-index: 100;
 }
 
 .displaynone {
@@ -37,15 +37,7 @@ html, body {
 }
 
 
-.myPicture {
-  height: 50%;
-  border: 2px solid black;
-}
 
-.myIntroduce {
-  height: 50%;
-  border: 2px solid black;
-}
 
 .container-fluid {
   height: 100%;
@@ -108,5 +100,169 @@ html, body {
   }
   100% {
     height: 100%;
+  }
+}
+
+.myPicture {
+  height: 50%;
+  z-index: 50;
+}
+
+.myIntroduce {
+  height: 50%;
+  z-index: 50;
+}
+
+/* 
+  create right box white line border
+*/
+
+.rightBoxBorderLine {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 3;
+}
+
+.rightBoxBorderLine:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 2px solid transparent;
+  animation: animate 1s linear forwards;
+  z-index: 3;
+}
+
+@keyframes animate {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: white;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: white;
+  }
+  
+  50% {
+    width: 100%;
+    height: 0;
+    border-top-color: white;
+    border-right-color: white;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: white;
+    border-right-color: white;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+.rightBoxBorderLine:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2;
+  border: 2px solid transparent;
+  animation: animate2 1s linear forwards;
+  animation-delay: 1s;
+  z-index: 3;
+}
+
+@keyframes animate2 {
+  0% {
+    width: 0;
+    border-bottom: 2px solid white;
+    
+  }
+  100% {
+    width: 100%;
+    border-bottom: 2px solid white;
+    
+  }
+}
+
+
+/* 
+  create left box white line border
+*/
+
+.leftBoxBorderLine {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0; 
+}
+
+.leftBoxBorderLine:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 2;
+  border: 2px solid transparent;
+  animation: leftbox 1s linear forwards;
+}
+
+@keyframes leftbox {
+  0% {
+    width: 0;
+    border-top: 2px solid white;
+    
+  }
+  100% {
+    width: 100%;
+    border-top: 2px solid white;
+    
+  }
+}
+
+.leftBoxBorderLine:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 2px solid transparent;
+  animation: leftbox2 1s linear forwards;
+  animation-delay: 1s; 
+}
+
+@keyframes leftbox2 {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: white;
+  }
+  
+  50% {
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: white;
+    border-left-color: white;
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: white;
+    border-left-color: white;
   }
 }
