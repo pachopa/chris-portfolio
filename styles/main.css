@@ -6,7 +6,6 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: #252628;
-  
 }
 
 .sidebar.top {
@@ -22,10 +21,10 @@ html, body {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.64);
   position: fixed;
   color: white;
-  padding: 30px;
   font-size: 2em;
   text-align: center;
   z-index: 100;
+  padding: 20px;
 }
 
 .displaynone {
@@ -138,7 +137,7 @@ html, body {
   background: transparent;
   border: 3px solid transparent;
   animation: animate 1s linear forwards;
-  z-index: 3;
+  z-index: -1;
 }
 
 @keyframes animate {
@@ -277,15 +276,9 @@ html, body {
   }
 }
 
-/* .typed {
-  display:inline-block; 
-  vertical-align: middle;
-  text-align: normal;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-} */
-
+.typed2 {
+  margin-left: 10%;
+}
 .spaceDiv {
   margin: 18% 0;
 }
@@ -301,16 +294,17 @@ html, body {
 .arrow {
   position: fixed;
   width: 2%;
-  height: 9%;
+  height: 7%;
   cursor: pointer;
   /* -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   margin-top: 370%;
   top: 50%;
   right: 650%; */
-  left: 50%;
-  bottom: 1%;
-  z-index: 30;
+  left: 48%;
+  bottom: 25%;
+  z-index: 99999;
+  display: block;
 }
 
 .downArrow {
