@@ -4,7 +4,7 @@ $(function () {
   // $('.openButton').on('click', function() {
   //   $('.sidebar.top').slideToggle(700);
   // })
-  // $('.openButton').hide();
+  $('.openButton').hide();
 
   // $(".openButton").click(function(e) {
   //     e.preventDefault();
@@ -41,10 +41,10 @@ $(function () {
 
 
   $(".typed").typed({
-    strings: ["Welcome to my portfolio website! <br> My name is <em>Chris Lee</em> <br> I'm a Web Developer <br> "],
-    typeSpeed: 10,
+    strings: ["<h1 style=font-size:60px;>Chris Lee</h1> <div style=font-size:40px;>I'm A Web Developer</div> <br> <div style=font-size:40px;>Living In Gastown Vancouver</div> <br> <div style=font-size:40px;>I Love <em> Music </em> </div> "],
+    typeSpeed: 70,
     backDelay: 0,
-    showCursor: true,
+    showCursor: null,
     startDelay: 1000,
     // loop
     loop: false,
