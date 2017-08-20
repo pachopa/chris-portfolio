@@ -4,7 +4,7 @@ $(function () {
   // $('.openButton').on('click', function() {
   //   $('.sidebar.top').slideToggle(700);
   // })
-  $('.openButton').hide();
+  // $('.openButton').hide();
 
   // $(".openButton").click(function(e) {
   //     e.preventDefault();
@@ -21,11 +21,6 @@ $(function () {
     // //e.preventDefault();
     $('#firstPage').toggle(700)
     $('.sidebar.top').slideToggle(700, function () {
-      // var slide = $('.fp-section.active').find('.slide.active');
-      // console.log(slide, "chris3434")
-      // //$('.fp-section.active').remove()
-      // console.log($('.fp-section.active').remove());
-      // console.log($.fn.fullpage)
       
     })
   })
