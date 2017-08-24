@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
+  <link href="styles/animate.css" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css" type="text/css" />
 
 </head>
@@ -22,44 +23,132 @@
     <!-- About Page -->
     <div class="sidebars">
       <div class="sidebar top">
-        <button><a class="sidebarButton">second</a></button>
-        
+        <!-- <button><a class="sidebarButton">second</a></button> -->
+
+        <div class="container-fluid">
+          <div class="aboutMeMiddleLine">About me</div>
+          <div class="line animated fadeInDown"></div>
+          <div class="line2 animated fadeInUp"></div>
+
+          <div class="row-fluid">
+            <div class="col-sm-6 aboutMeLeftContent">
+              <div id="orderFirst" class="aboutMe animated fadeInDown">About Me</div>
+              <div id="orderSecond" class="animated fadeIn">
+                <div class="aboutMeIntro">
+                  In 2010, I had been introduced to a Coding World for the first time through computer science in Korean University.
+                </div>
+                <div class="aboutMeBody">
+                  Recently, I’ve graduated a lighthouse labs which is the code academy. And every week, I have learned different languages,
+                  frameworks, libraries, and environments.
+                </div>
+                <div class="aboutMeConCLu">
+                  Thus, my strength as a junior web developer is that I am used to learning new languages fast. And
+                </div>
+              </div>
+              <div id="orderSeventh" class="education animated fadeInLeft">
+                Education
+              </div>
+              <div id="orderEighth" class="educationContent animated fadeIn">
+                dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text
+                dummy Text dummy Text dummy Text dummy Text dummy Text
+              </div>
+            </div>
+            <div id="orderThrid" class="col-sm-6 skills animated fadeInDown">
+              <div class="skillHeader">Development</div>
+              <div class="languages">Languages</div>
+              <div id="orderFourth" class="animated fadeIn">
+                <ul class="skillsContent">
+                  <a class="skillDetail">
+                    <li class="skill">Html</li>
+                  </a>
+                  <a class="skillDetail">
+                    <li class="skill">Sass</li>
+                  </a>
+                  <a class="skillDetail">
+                    <li class="skill">Javascript</li>
+                  </a>
+                  <a class="skillDetail">
+                    <li class="skill">Jquery</li>
+                  </a>
+                </ul>
+              </div>
+
+              <!-- <div class="languages">Languages</div>
+              <div id="orderFourth" class="animated fadeIn">
+                <ul class="skillsContent">
+                  <a class="skillDetail">
+                    <li class="skill">Html</li>
+                  </a>
+                  <a class="skillDetail">
+                    <li class="skill">Sass</li>
+                  </a>
+                  <a class="skillDetail">
+                    <li class="skill">Javascript</li>
+                  </a>
+                  <a class="skillDetail">
+                    <li class="skill">Jquery</li>
+                  </a>
+                </ul>
+              </div> -->
+              <!-- <div id="orderFifth" class="animated fadeIn">
+                <div class="frameWorks">FrameWorks, Libraries, and Environments</div><br>
+                <ul class="skillsContent">
+                  <a class="skillDetail">
+                    <li class="skill">Bootstrap</li>
+                  </a>
+                  <a class="skillDetail">
+                    <li class="skill">React</li>
+                  </a>
+                  <a class="skillDetail">
+                    <li class="skill">Ajax</li>
+                  </a>
+                  <a class="skillDetail">
+                    <li class="skill">NodeJS</li>
+                  </a>
+                </ul>
+              </div> -->
+              <!-- <br> -->
+              <!-- <div id="orderSixth" class="animated fadeIn">
+                <ul class="skillsContent">
+                  <li class="skill database">Database</li>
+                  <li class="skill"><a class="skillDetail">PostgreSQL</a></li>
+                  <li class="skill"><a class="skillDetail">SQL</a></li>
+                  <li class="skill"><a class="skillDetail">Express</a></li>
+                  <li class="skill"><a class="skillDetail">Wordpress</a></li>
+                </ul>
+              </div> -->
+              <!-- <li class="cms">Wordpress</li> -->
+              <!-- </ul> -->
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <canvas></canvas>
-    <div class="line"></div>
-    <div class="container-fluid backgroundAbsolute">
-      
-      <div class="row-fluid">
-        <div class="col-sm-1 centering">
-        </div>
-        <div class="col-sm-2 centering myPicture">
-          <div class="leftBoxBorderLine"></div>
+    <div class="container-fluid changePosition">
 
+      <div class="row-fluid displayTable">
+        <div class="col-sm-3 centering myPicture">
+          <div class="leftBoxBorderLine"></div>
         </div>
-        <div class="col-sm-8 centering myIntroduce">
+        <div class="col-sm-9 centering myIntroduce">
           <div class="rightBoxBorderLine"></div>
           <div class="spaceDiv"></div>
           <div class="typed"></div>
           <div class="typed2"></div>
-          <a class="openButton"><div class="arrow">
+          <a class="openButton">
+            <div class="arrow">
               <div class="downArrow"></div>
               <div class="downArrow"></div>
               <div class="downArrow"></div>
-              <!-- <span class="ScrollDown">Scroll down</span> -->
-            </div></a>
-        </div>
-        <div class="col-sm-1 centering">
-       
+            </div>
+          </a>
         </div>
       </div>
     </div>
-
   </section>
-
   <div id="fullpage">
-
     <section class="vertical-scrolling">
       second section
     </section>
@@ -72,10 +161,7 @@
     <section class="vertical-scrolling">
       fifth section
     </section>
-
   </div>
-
-
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"

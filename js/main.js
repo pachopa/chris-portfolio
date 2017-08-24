@@ -1,23 +1,45 @@
 $(function () {
-  // $('.sidebar.top').hide();
+  var changeBackground, i = 0;
+  var backgroundColor = ['rgb(43, 188, 239)','rgb(181, 241, 38)','rgb(254, 194, 43)','rgb(255, 95, 6)', 'rgb(73, 226, 214)', 'rgb(181, 241, 38)', 'rgb(247, 30, 97)', 'rgb(165, 64, 254)'];
 
-  // $('.openButton').hide();
-  // $('#fullpage').hide();
-
+  //sidebar toggle
   $('.openButton').on('click', function (e) {
     e.preventDefault();
-    $('.sidebar.top').slideToggle(700);
+    $('.typed').hide();
+    $('.typed2').hide();
+    $('.arrow').hide();
+    const $order = $("div[id^='order']");
+    // console.log($order, $order[2]);
+    $('.sidebar.top').slideToggle(700, function () {
+      // $('.aboutAllContent').show()
+      // $('#orderFirst').delay(500).fadeIn(0).addClass("animated fadeInDown")
+      var time = 500;
+     
+      $order.each(function (index, val) {
+        $(this).delay(time).fadeIn(0)
+        time += 500;
+      });
+    });
+    
   })
+  // changeBackground = setInterval(function(event) {
+  //   if(i === backgroundColor.length) {
+  //     $('body').animate({backgroundColor: backgroundColor[i]}, 'slow');
+  //     i = 0;
+      
+  //   } else {
+  //     $('body').animate({backgroundColor: backgroundColor[i]}, 'slow');
+  //     i++    
+  //   }
+  // }, 2500)
 
+  //sidebar toggle
   $('.sidebarButton').on('click', function (e) {
-    // console.log("chris")
-    // //e.preventDefault();
     $('#firstPage').toggle(700)
     $('.sidebar.top').slideToggle(700, function () {
-
     })
   })
-
+  //fullpage js
   $('#fullpage').fullpage({
     sectionsColor: ['#B8AE9C', '#348899', '#F2AE72', '#5C832F', '#B8B89F', '#348899'],
     sectionSelector: '.vertical-scrolling',
@@ -31,8 +53,7 @@ $(function () {
     }
   })
 
-
-
+  //type js
   $(".typed").typed({
     strings: ["<h1 style=font-size:150px;>Chris Lee</h1> "],
     typeSpeed: 70,
