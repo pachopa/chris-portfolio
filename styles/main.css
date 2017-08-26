@@ -39,7 +39,7 @@ html, body {
   opacity: 1;
   visibility: visible;
   top: 0;
-  left: 0;
+  left: 0;  
 }
 
 .displayTable {
@@ -127,12 +127,12 @@ html, body {
 
 .myPicture {
   height: 95%;
-  z-index: 30;
+  z-index: -2;
 }
 
 .myIntroduce {
   height: 95%;
-  z-index: 30;
+  z-index: -2;
   color: white;
 }
 
@@ -407,11 +407,7 @@ html, body {
 
 .skills {
   font-size: 60px;
-  margin-top: 2.3%;
-}
 
-.skillsBox {
-  margin-top: 1.5%
 }
 
 .skillsContent {
@@ -427,7 +423,6 @@ html, body {
 
 .skillDetail {
   color: white;
-  display: block;
   cursor: pointer;
 }
 
@@ -442,4 +437,23 @@ html, body {
 .aboutMeLeftContent {
   text-align: right;
   padding: 0 3%;
+}
+
+.database, #orderFifth ,#orderSixth {
+  float:left;
+}
+
+.project {
+  
+}
+
+.projectLeftField, .projectRightField, .projectRow , .project, .projectName, .projectContent {
+  height: 100%;
+  min-height: 100%;
+}
+
+.projectName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

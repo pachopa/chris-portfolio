@@ -1,6 +1,6 @@
 $(function () {
   var changeBackground, i = 0;
-  var backgroundColor = ['rgb(43, 188, 239)','rgb(181, 241, 38)','rgb(254, 194, 43)','rgb(255, 95, 6)', 'rgb(73, 226, 214)', 'rgb(181, 241, 38)', 'rgb(247, 30, 97)', 'rgb(165, 64, 254)'];
+  var backgroundColor = ['rgb(43, 188, 239)', 'rgb(181, 241, 38)', 'rgb(254, 194, 43)', 'rgb(255, 95, 6)', 'rgb(73, 226, 214)', 'rgb(181, 241, 38)', 'rgb(247, 30, 97)', 'rgb(165, 64, 254)'];
 
   //sidebar toggle
   $('.openButton').on('click', function (e) {
@@ -8,25 +8,25 @@ $(function () {
     $('.typed').hide();
     $('.typed2').hide();
     $('.arrow').hide();
+    fullpage();
     const $order = $("div[id^='order']");
     // console.log($order, $order[2]);
     $('.sidebar.top').slideToggle(700, function () {
       // $('.aboutAllContent').show()
       // $('#orderFirst').delay(500).fadeIn(0).addClass("animated fadeInDown")
       var time = 500;
-     
+
       $order.each(function (index, val) {
         $(this).delay(time).fadeIn(0)
         time += 500;
       });
     });
-    
   })
   // changeBackground = setInterval(function(event) {
   //   if(i === backgroundColor.length) {
   //     $('body').animate({backgroundColor: backgroundColor[i]}, 'slow');
   //     i = 0;
-      
+
   //   } else {
   //     $('body').animate({backgroundColor: backgroundColor[i]}, 'slow');
   //     i++    
@@ -39,19 +39,25 @@ $(function () {
     $('.sidebar.top').slideToggle(700, function () {
     })
   })
+
+  // function fullpage() {
+    $('#fullpage').fullpage({
+      sectionsColor: ['#B8AE9C', '#348899', '#F2AE72', '#5C832F', '#B8B89F', '#348899'],
+      sectionSelector: '.vertical-scrolling',
+      navigation: true,
+      anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection'],
+      afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
+        console.log("chsi3-3-", anchorLink, index, slideAnchor, slideIndex)
+      },
+      afterLoad: function (anchor, index) {
+        console.log(anchor, index)
+      }
+    })
+  // }
   //fullpage js
-  $('#fullpage').fullpage({
-    sectionsColor: ['#B8AE9C', '#348899', '#F2AE72', '#5C832F', '#B8B89F', '#348899'],
-    sectionSelector: '.vertical-scrolling',
-    navigation: true,
-    anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection'],
-    afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
-      console.log("chsi3-3-", anchorLink, index, slideAnchor, slideIndex)
-    },
-    afterLoad: function (anchor, index) {
-      console.log(anchor, index)
-    }
-  })
+
+
+  // $('.fullpage').hide()
 
   //type js
   $(".typed").typed({
