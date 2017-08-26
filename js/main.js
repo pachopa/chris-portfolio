@@ -40,12 +40,19 @@ $(function () {
     })
   })
 
+  //img slider for portfolio 
+  
+
   // function fullpage() {
     $('#fullpage').fullpage({
       sectionsColor: ['#B8AE9C', '#348899', '#F2AE72', '#5C832F', '#B8B89F', '#348899'],
       sectionSelector: '.vertical-scrolling',
-      navigation: true,
+      navigation: false,
       anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection'],
+      controlArrows: true,
+      verticalCentered: true,
+      scrollingSpeed: 1100,
+      css3: true,
       afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
         console.log("chsi3-3-", anchorLink, index, slideAnchor, slideIndex)
       },
