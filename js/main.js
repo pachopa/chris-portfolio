@@ -68,7 +68,7 @@ $(function () {
 
   //type js
   $(".typed").typed({
-    strings: ["<h1 style=font-size:150px;>Chris Lee</h1> "],
+    strings: ["<h1>Chris Lee</h1> "],
     typeSpeed: 70,
     backDelay: 0,
     showCursor: null,
@@ -77,7 +77,7 @@ $(function () {
     loop: false,
     callback: function () {
       $(".typed2").typed({
-        strings: ["<div style=font-size:40px;>I'm A Web Developer</div>", "<div style=font-size:40px;>Living In Gastown Vancouver</div>", "<div style=font-size:40px;>I Love <em> Music </em> </div> "],
+        strings: ["<div>I'm A Web Developer</div>", "<div>Living In Gastown Vancouver</div>", "<div>I Love <em> Music </em> </div> "],
         typeSpeed: 70,
         backDelay: 50,
         showCursor: null,

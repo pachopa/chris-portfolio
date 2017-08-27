@@ -7,12 +7,13 @@
 
   <title>Chris Lee - PortFolio</title>
 
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
   <link rel="stylesheet" href="styles/normalize.css" type="text/css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
   <link href="styles/animate.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css"
+  />
   <link rel="stylesheet" href="styles/main.css" type="text/css" />
 
 </head>
@@ -117,10 +118,10 @@
     <div class="container-fluid changePosition">
 
       <div class="row-fluid displayTable">
-        <div class="col-sm-3 centering myPicture">
+        <div class="col-xs-1 col-sm-3 centering myPicture">
           <div class="leftBoxBorderLine"></div>
         </div>
-        <div class="col-sm-9 centering myIntroduce">
+        <div class="col-xs-11 col-sm-9 centering myIntroduce">
           <div class="rightBoxBorderLine"></div>
           <div class="spaceDiv"></div>
           <div class="typed"></div>
@@ -140,22 +141,60 @@
     <section class="vertical-scrolling">
       <div class="slide" data-anchor="slide1">
         <div class="container-fluid project">
+          <a href="https://github.com/shinmike/scortch"><img class="githubImg" src="/public/github2.png" /></a>
+          <a href="https://www.linkedin.com/in/lee-chris-a569b4123/"><img class="linkdinImg" src="/public/linkdin.png" /></a>
+          <a href="https://github.com/shinmike/scortch"><img class="gmailImg" src="/public/gmail.png" /></a>
+      
           <div class="row-fluid projectRow">
             <div class="col-sm-4 projectLeftField">
               <div class="scortch">
-                <div class="projectName">Scor<span style="color:white;font-weight:bold">tch.</span></div><br>
+                <div class="projectName">Scor<span style="color:#f8f8f8;font-weight:bold">tch.</span></div><br>
               </div>
             </div>
             <div class="col-sm-8 projectRightField">
               <div class="projectContent">
-
+                <div class="container-fluid projectContent">
+                  <div class="row-fluid projectContent">
+                    <div class="col-sm-4 projectContent">
+                      
+                    </div>
+                    <div class="col-sm-8 projectContent scortchContent">
+                      <div class="projectDescription">Project Description</div>
+                      <div class="projectDescriptionContent">This app provides for sports fans to feel good by connecting them on unique chat channels with real
+                        time data which is from the API. This API comes from "www.mysportsfeeds.com" and incorporates 3 primary
+                        feeds Daily Schedule, Scoreboards and Play By Play</div>
+                      <div class="techDescription">Technologies Used </div>
+                      <table class="projectSkillTable">
+                        <thead>
+                          <td>Express</td>
+                          <td>NodeJS</td>
+                          <td>ReactJS</td>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Sass</td>
+                            <td>Knex</td>
+                            <td>PostgreSQL</td>
+                          </tr>
+                          <tr>
+                            <td>Axios</td>
+                            <td>Ajax</td>
+                            <td>Socket.IO</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="mouse"></div>
+                      <p>Scroll</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="slide" data-anchor="slide2">
-        test hello 
+        test hello
       </div>
     </section>
     <section class="vertical-scrolling">

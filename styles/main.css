@@ -15,6 +15,7 @@ html, body {
   height: 100%;
   background: rgb(52, 136, 153);
   display: none;
+  overflow: auto;
 }
 
 .sidebars > .sidebar {
@@ -127,12 +128,12 @@ html, body {
 
 .myPicture {
   height: 95%;
-  z-index: -2;
+  z-index: -1;
 }
 
 .myIntroduce {
   height: 95%;
-  z-index: -2;
+  z-index: -1;
   color: white;
 }
 
@@ -294,9 +295,13 @@ html, body {
     border-left-color: white;
   }
 }
+.typed {
+  font-size: 5vw;
+}
 
 .typed2 {
   margin-left: 10%;
+  font-size: 3vw;
 }
 .spaceDiv {
   margin: 18% 0;
@@ -444,12 +449,12 @@ html, body {
 }
 
 .project {
-  padding: 2%;
+  padding: 3%;
 }
 
 .projectLeftField, .projectRightField, .projectRow , .project, .scortch, .projectContent {
   height: 100%;
-  min-height: 100%;
+  /* min-height: 100%; */
 }
 .project {
   background-color: white;
@@ -481,3 +486,180 @@ html, body {
   width: 100%;
   height: auto;
 }
+
+.projectContent {
+  padding: 0;
+}
+
+.scortchContent {
+  padding: 0;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  width: 60%;
+}
+
+.projectDescription {
+  font-size: 4.4vw;
+  color: white;
+  margin-top: 10%;
+}
+
+.projectDescriptionContent {
+  width: 95%;
+  font-size: 1.5vw;
+  color: #323232;
+  margin-top: 2%;
+  margin-left: 3%;
+}
+
+.techDescription {
+  font-size: 4vw;
+  color: white;
+  margin-top: 2%;
+}
+
+.projectSkillTable {
+  width: 70%;
+  font-size: 1.5vw;
+  margin-left: 3%;
+}
+
+.githubLink {
+  position: fixed;
+  bottom: 1%;
+  left: 72%;
+  font-size: 1.5vw;
+  color: black;
+}
+
+.githubImg {
+  position: absolute;
+  top: 1.8%;
+  left: 47.5%;
+  width: 1vw;
+  height: 1vw;
+}
+
+.linkdinImg {
+  position: absolute;
+  top: 1.8%;
+  left: 46.5%;
+  width: 1vw;
+  height: 1vw;
+}
+
+.gmailImg {
+  position: absolute;
+  top: 1.8%;
+  left: 45.4%;
+  width: 1.1vw;
+  height: 1.1vw;
+}
+/* 
+  hover css
+*/
+.link-2 {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  padding: 0 1px;
+  -webkit-transition: color ease 0.3s;
+  transition: color ease 0.3s;
+  
+}
+
+.link-2::before, .link-2::after {
+  content: '';
+  position: absolute;
+  background-color: #ff5851;
+  z-index: -1;
+  height: 5%;
+}
+
+.link-2::before {
+  width: 0%;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: width ease 0.4s;
+  transition: width ease 0.4s;
+}
+
+.link-2::after {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+}
+
+.link-2:hover::before {
+  width: 100%;
+}
+
+.link-2:hover::after {
+  left: 100%;
+  width: 0%;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* 
+  scroll css
+*/
+
+
+
+/* 
+  next/prev slide 
+*/
+.fp-controlArrow.fp-next {
+  right: 0.7%;
+  border-width: 1.7vw 0 1.7vw 1.7vw;
+  border-color: transparent transparent transparent black;
+}
+
+.fp-controlArrow.fp-prev {
+  left: 0.5%;
+  width: 0;
+  border-width: 1.7vw 1.7vw 1.7vw 0;
+  border-color: transparent black transparent transparent;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .typed {
+    font-size: 60px;
+  }
+  .typed2 {
+    font-size: 40px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
