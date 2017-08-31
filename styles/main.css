@@ -5,7 +5,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: rgb(38, 204, 192);
+  background-color: #f0f0f0;
 }
 
 .sidebar.top {
@@ -128,13 +128,13 @@ html, body {
 
 .myPicture {
   height: 95%;
-  z-index: -1;
+  z-index: 30;
 }
 
 .myIntroduce {
   height: 95%;
-  z-index: -1;
-  color: white;
+  z-index: 30;
+  color: #323232;
 }
 
 /* 
@@ -164,18 +164,18 @@ html, body {
   0% {
     width: 0;
     height: 0;
-    border-top-color: white;
+    border-top-color: #323232;
     border-right-color: transparent;
     border-bottom-color: transparent;
-    border-left-color: white;
+    border-left-color: #323232;
     z-index: 3;
   }
   
   50% {
     width: 100%;
     height: 0;
-    border-top-color: white;
-    border-right-color: white;
+    border-top-color: #323232;
+    border-right-color: #323232;
     border-bottom-color: transparent;
     border-left-color: transparent;
     z-index: 3;
@@ -184,8 +184,8 @@ html, body {
   100% {
     width: 100%;
     height: 100%;
-    border-top-color: white;
-    border-right-color: white;
+    border-top-color: #323232;
+    border-right-color: #323232;
     border-bottom-color: transparent;
     border-left-color: transparent;
     z-index: 3;
@@ -208,13 +208,13 @@ html, body {
 @keyframes animate2 {
   0% {
     width: 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #323232;
     z-index: 3;
     
   }
   100% {
     width: 100%;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #323232;
     
     z-index: 3;
   }
@@ -246,12 +246,12 @@ html, body {
 @keyframes leftbox {
   0% {
     width: 0;
-    border-top: 1px solid white;
+    border-top: 1px solid #323232;
     
   }
   100% {
     width: 100%;
-    border-top: 1px solid white;
+    border-top: 1px solid #323232;
     
   }
 }
@@ -274,7 +274,7 @@ html, body {
     border-top-color: transparent;
     border-right-color: transparent;
     border-bottom-color: transparent;
-    border-left-color: white;
+    border-left-color: #323232;
   }
   
   50% {
@@ -282,8 +282,8 @@ html, body {
     height: 100%;
     border-top-color: transparent;
     border-right-color: transparent;
-    border-bottom-color: white;
-    border-left-color: white;
+    border-bottom-color: #323232;
+    border-left-color: #323232;
   }
 
   100% {
@@ -291,8 +291,8 @@ html, body {
     height: 100%;
     border-top-color: transparent;
     border-right-color: transparent;
-    border-bottom-color: white;
-    border-left-color: white;
+    border-bottom-color: #323232;
+    border-left-color: #323232;
   }
 }
 .typed {
@@ -355,7 +355,7 @@ html, body {
   top: 0;
   height: 100%;
   width: 51%;
-  background: #fff;
+  background: #323232;
 }
 
 .downArrow:before {
@@ -493,22 +493,25 @@ html, body {
 
 .scortchContent {
   padding: 0;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
   width: 60%;
 }
 
 .projectDescription {
-  font-size: 4.4vw;
+  font-size: 4.2vw;
   color: white;
-  margin-top: 10%;
+  margin-top: 15%;
+  font-family: 'Baloo Bhaijaan', cursive;
+  border-bottom: 3px solid white;
 }
 
 .projectDescriptionContent {
   width: 95%;
   font-size: 1.5vw;
+  /* font-family: "Cabin", sans-serif; */
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-family: 'Montaga', serif; */
+  /* font-family: 'Montserrat Alternates', sans-serif; */
+  font-family: 'Dosis', sans-serif;
   color: #323232;
   margin-top: 2%;
   margin-left: 3%;
@@ -518,12 +521,17 @@ html, body {
   font-size: 4vw;
   color: white;
   margin-top: 2%;
+  font-family: 'Baloo Bhaijaan', cursive;
+  /* border-bottom: 1px solid white; */
 }
 
 .projectSkillTable {
-  width: 70%;
-  font-size: 1.5vw;
-  margin-left: 3%;
+  width: 100%;
+  font-size: 1.8vw;
+  margin-left: 8%;
+  color: #4c4a57;
+  font-family: 'Dosis', sans-serif;
+  
 }
 
 .githubLink {
@@ -554,8 +562,8 @@ html, body {
   position: absolute;
   top: 1.8%;
   left: 45.4%;
-  width: 1.1vw;
-  height: 1.1vw;
+  width: 1vw;
+  height: 1vw;
 }
 /* 
   hover css
@@ -611,10 +619,131 @@ a:hover {
   text-decoration: none;
 }
 
+.borderBox {
+  width: 100%;
+  height: 35%;
+  background: #1c1b20;
+  padding: 1vw;
+  border-radius: 2.5vw;
+  margin-top: 12%;
+}
+
 /* 
   scroll css
 */
 
+p {
+  position: absolute;
+  bottom: 0.6%;
+  left: 22%;
+  font-family: "Cabin", sans-serif;
+  letter-spacing: 12px;
+  text-indent: 12px;
+  color: #ffffff;
+  -webkit-animation: colorText 5s ease-out infinite, nudgeText 5s ease-out infinite;
+          animation: colorText 5s ease-out infinite, nudgeText 5s ease-out infinite;
+}
+
+@-webkit-keyframes nudgeText {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  20% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  30% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  60% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  80% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  90% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes nudgeText {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  20% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  30% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  60% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  80% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  90% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes colorText {
+  21% {
+    color: #4e5559;
+  }
+  30% {
+    color: #ffffff;
+  }
+  51% {
+    color: #4e5559;
+  }
+  60% {
+    color: #ffffff;
+  }
+  81% {
+    color: #4e5559;
+  }
+  90% {
+    color: #ffffff;
+  }
+}
+@keyframes colorText {
+  21% {
+    color: #4e5559;
+  }
+  30% {
+    color: #ffffff;
+  }
+  51% {
+    color: #4e5559;
+  }
+  60% {
+    color: #ffffff;
+  }
+  81% {
+    color: #4e5559;
+  }
+  90% {
+    color: #ffffff;
+  }
+}
 
 
 /* 
@@ -631,6 +760,20 @@ a:hover {
   width: 0;
   border-width: 1.7vw 1.7vw 1.7vw 0;
   border-color: transparent black transparent transparent;
+}
+
+.portFolioPicture {
+  width: 100%;
+  height: 100%;
+}
+
+#navbar {
+  background: none;
+  width: 100%;
+  height: 6%;
+  top: 0px;
+  position: absolute;
+  z-index: 100;
 }
 
 

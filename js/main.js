@@ -2,12 +2,22 @@ $(function () {
   var changeBackground, i = 0;
   var backgroundColor = ['rgb(43, 188, 239)', 'rgb(181, 241, 38)', 'rgb(254, 194, 43)', 'rgb(255, 95, 6)', 'rgb(73, 226, 214)', 'rgb(181, 241, 38)', 'rgb(247, 30, 97)', 'rgb(165, 64, 254)'];
 
+  // $('.githubImg').hide();
+  // $('.linkdinImg').hide();
+  // $('.gmailImg').hide();
+  $('.ScrollDown').hide();
   //sidebar toggle
   $('.openButton').on('click', function (e) {
     e.preventDefault();
     $('.typed').hide();
     $('.typed2').hide();
     $('.arrow').hide();
+
+    $('.githubImg').show();
+    $('.linkdinImg').show();
+    $('.gmailImg').show();
+    $('.ScrollDown').show();
+
     fullpage();
     const $order = $("div[id^='order']");
     // console.log($order, $order[2]);
