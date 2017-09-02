@@ -2,9 +2,7 @@ $(function () {
   var changeBackground, i = 0;
   var backgroundColor = ['rgb(43, 188, 239)', 'rgb(181, 241, 38)', 'rgb(254, 194, 43)', 'rgb(255, 95, 6)', 'rgb(73, 226, 214)', 'rgb(181, 241, 38)', 'rgb(247, 30, 97)', 'rgb(165, 64, 254)'];
 
-  // $('.githubImg').hide();
-  // $('.linkdinImg').hide();
-  // $('.gmailImg').hide();
+
   $('.ScrollDown').hide();
   //sidebar toggle
   $('.openButton').on('click', function (e) {
@@ -17,16 +15,16 @@ $(function () {
     $('.linkdinImg').show();
     $('.gmailImg').show();
     $('.ScrollDown').show();
-
     fullpage();
     const $order = $("div[id^='order']");
+    console.log($order);
     // console.log($order, $order[2]);
     $('.sidebar.top').slideToggle(700, function () {
       // $('.aboutAllContent').show()
       // $('#orderFirst').delay(500).fadeIn(0).addClass("animated fadeInDown")
       var time = 500;
-
       $order.each(function (index, val) {
+        console.log($(this));
         $(this).delay(time).fadeIn(0)
         time += 500;
       });
@@ -53,7 +51,7 @@ $(function () {
   //img slider for portfolio 
   
 
-  // function fullpage() {
+  function fullpage() {
     $('#fullpage').fullpage({
       sectionsColor: ['#B8AE9C', '#348899', '#F2AE72', '#5C832F', '#B8B89F', '#348899'],
       sectionSelector: '.vertical-scrolling',
@@ -70,7 +68,7 @@ $(function () {
         console.log(anchor, index)
       }
     })
-  // }
+  }
   //fullpage js
 
 
@@ -78,8 +76,8 @@ $(function () {
 
   //type js
   $(".typed").typed({
-    strings: ["<h1>Chris Lee</h1> "],
-    typeSpeed: 70,
+    strings: [`<div> <h1 style=float:left> c </h1> <h1 style=float:left;> h </h1> <h1 style=float:left> r </h1> <h1 style=float:left;> i </h1> <h1 style=float:left;> s </h1> <h1 class=chrisLee> l </h1> <h1 style=float:left;> e </h1> <h1 style=float:left;> e </h1> </div>`],
+    typeSpeed: 40,
     backDelay: 0,
     showCursor: null,
     startDelay: 2000,

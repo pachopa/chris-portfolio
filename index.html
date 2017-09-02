@@ -25,109 +25,75 @@
 <body>
   <!-- this is going to be about page -->
   <section class="homepage" id="firstPage">
-
     <!-- About Page -->
     <div class="sidebars">
       <div class="sidebar top">
-        <div class="container-fluid">
-          <div class="aboutMeMiddleLine">About me</div>
-          <div class="line animated fadeInDown"></div>
-          <div class="line2 animated fadeInUp"></div>
+        <a class="sidebarButton">
+          <div class="arrow2">
+            <div class="downArrow"></div>
+            <div class="downArrow"></div>
+            <div class="downArrow"></div>
+          </div>
+        </a>
 
-          <div class="row-fluid">
-            <div class="col-sm-6 aboutMeLeftContent">
-              <div id="orderFirst" class="aboutMe animated fadeInDown">About Me</div>
-              <div id="orderSecond" class="animated fadeIn">
-                <div class="aboutMeIntro">
-                  In 2010, I had been introduced to a Coding World for the first time through computer science in Korean University.
-                </div>
-                <div class="aboutMeBody">
-                  Recently, I’ve graduated a lighthouse labs which is the code academy. And every week, I have learned different languages,
-                  frameworks, libraries, and environments.
-                </div>
-                <div class="aboutMeConCLu">
-                  Thus, my strength as a junior web developer is that I am used to learning new languages fast. And
-                </div>
+        <div class="container-fluid sidebarContainer">
+          <!-- <div class="aboutMeMiddleLine">About me</div> -->
+          <!-- <div class="line animated fadeInDown"></div> -->
+          <!-- <div class="line2 animated fadeInUp"></div> -->
+          <div class="row-fluid sidebarContainer">
+            <div class="col-sm-12 aboutMeHeight">
+              <div id="orderFirst" class="aboutMe animated fadeInDown">
+                About Me.
               </div>
-              <div id="orderThrid" class="education animated fadeInLeft">
+            </div>
+            <div class="col-sm-5 aboutMeIntroduce">
+              <div id="orderSecond" class="aboutMeHeader animated fadeInLeft">My Introduction</div>
+              <div id="orderThrid" class="aboutMeIntro animated fadeIn">
+                In 2010, I had been introduced to a Coding World for the first time through computer science in Korean University. Recently,
+                I’ve graduated a lighthouse labs which is the code academy. And every week, I have learned different languages,
+                frameworks, libraries, and environments. Thus, my strength as a junior web developer is that I am used to
+                learning new languages fast. And
+
+              </div>
+              <div id="orderFourth" class="education animated fadeInLeft">
                 Education
               </div>
-              <div id="orderFourth" class="educationContent animated fadeIn">
+              <div id="orderFifth" class="educationContent animated fadeIn">
                 dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text dummy Text
                 dummy Text dummy Text dummy Text dummy Text dummy Text
               </div>
             </div>
-            <div id="orderThrid" class="col-sm-6 skills animated fadeInDown">
-              <div class="skillHeader">Development</div>
-              <div class="languages">Languages</div>
-              <div id="orderFourth" class="animated fadeIn">
-                <ul class="skillsContent">
-                  <a class="skillDetail">
-                    <li class="skill">Html</li>
-                  </a>
-                  <a class="skillDetail">
-                    <li class="skill">Sass</li>
-                  </a>
-                  <a class="skillDetail">
-                    <li class="skill">Javascript</li>
-                  </a>
-                  <a class="skillDetail">
-                    <li class="skill">Jquery</li>
-                  </a>
+            <div class="col-sm-7 aboutMeSkillsSection">
+              <div id="orderSixth" class="aboutMeSkills animated fadeInRight">
+                Skills
+              </div>
+              <div id="orderSeventh" class="animated fadeIn">
+                <div class="aboutMeLanguages">Languages : </div>
+                <ul class="languagesContent">
+                  <li>Javascript</li>
+                  <li>Python</li>
+                  <li>Ruby</li>
+                  <li>Html</li>
+                  <li>Css</li>
                 </ul>
               </div>
+              <div id="orderEighth" class="animated fadeIn">
+                <div class="frameworksContent">FrameWorks, Libraries, and Environments : </div>
 
-              <div id="orderFifth" class="animated fadeIn">
-                <div class="frameWorks">FrameWorks, Libraries, and Environments</div><br>
-                <ul class="skillsContent">
-                  <a class="skillDetail">
-                    <li class="skill">Bootstrap</li>
-                  </a>
-                  <a class="skillDetail">
-                    <li class="skill">React</li>
-                  </a>
-                  <a class="skillDetail">
-                    <li class="skill">Ajax</li>
-                  </a>
-                  <a class="skillDetail">
-                    <li class="skill">NodeJS</li>
-                  </a>
-                </ul>
-              </div>
-              <div id="orderSixth" class="animated fadeIn">
-                <div class="database">Database</div>
-                <ul class="skillsContent">
-                  <a class="skillDetail">
-                    <li class="skill">PostgreSQL</li>
-                  </a>
-                  <a class="skillDetail">
-                    <li class="skill">SQL</li>
-                  </a>
-                  <a class="skillDetail">
-                    <li class="skill">Express</li>
-                  </a>
-                  <a class="skillDetail">
-                    <li class="skill">Wordpress</li>
-                  </a>
-                </ul>
-                <button><a class="sidebarButton">second</a></button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- <canvas></canvas> -->
     <div class="container-fluid changePosition">
-
       <div class="row-fluid displayTable">
         <div class="col-xs-1 col-sm-3 centering myPicture">
-          <div class="leftBoxBorderLine"></div>
+          <!-- <div class="leftBoxBorderLine"></div> -->
         </div>
         <div class="col-xs-11 col-sm-9 centering myIntroduce">
-          <div class="rightBoxBorderLine"></div>
-          <div class="spaceDiv"></div>
+          <!-- <div class="rightBoxBorderLine"></div> -->
+
           <div class="typed"></div>
           <div class="typed2"></div>
           <a class="openButton">
@@ -204,6 +170,11 @@
       <div class="slide" data-anchor="slide2">
         <div class="container-fluid project">
           <img class="portFolioPicture" src="/public/scortchCard.png" />
+        </div>
+      </div>
+      <div class="slide" data-anchor="slide3">
+        <div class="container-fluid project">
+          <img class="portFolioPicture" src="/public/scortchChatting.png" />
         </div>
       </div>
     </section>

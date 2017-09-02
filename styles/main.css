@@ -5,26 +5,96 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
 }
+
+.sidebarContainer {
+  height: 100%;
+}
+
+/* .sidebarButton {
+  z-index: 999999;
+  position: fixed;
+  bottom: 0%;
+  left: 50%;
+} */
+
+.aboutMeHeight {
+  height: 25%;
+  background: #f8f8f8;
+}  
 
 .sidebar.top {
   left: 0;
   right: 0;
   top: 0;
   height: 100%;
-  background: rgb(52, 136, 153);
+  background: white;
   display: none;
   overflow: auto;
 }
 
 .sidebars > .sidebar {
   position: fixed;
-  color: white;
+  color: #323232;
   font-size: 1.5em;
   z-index: 100;
   padding: 3%;
 }
+
+.aboutMeIntroduce {
+  height: 75%;
+  padding: 1.5%;
+  background: 	#392e6d;
+  color: black;
+}
+
+.aboutMeSkillsSection {
+  height: 75%;
+  background: #392e6d;
+}
+
+.aboutMeSkills {
+  color: white;
+  font-size: 3vw;
+  font-family: 'Baloo Bhaijaan', cursive;
+  border-bottom: 3px solid white;
+  margin-top: 3%;
+}
+
+.aboutMeLanguages {
+  float: left;
+  clear: both;
+  color: white;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 2vw;
+}
+
+.languagesContent {
+  color: black;
+  clear: both;
+  list-style-type: none;
+  font-family: 'Dosis', sans-serif;
+}
+
+.frameworksContent {
+  color: white;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 2vw;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+
+
+
 
 .homepage {
   width: 100%;
@@ -35,12 +105,13 @@ html, body {
   height: 100%;
   display: table;
   width: 100%;
-  padding: 0;
   position: absolute;
   opacity: 1;
   visibility: visible;
   top: 0;
-  left: 0;  
+  left: 0;
+  background: white;
+  padding: 3%;
 }
 
 .displayTable {
@@ -48,6 +119,7 @@ html, body {
   display:table-cell; 
   vertical-align: middle;
   padding: 2%;
+  background: white;
 }
 
 .centering {
@@ -76,10 +148,11 @@ html, body {
 .line {
   width: 1px;
   position: absolute;
-  top: 10%;
+  top: 34%;
   right: 50%;
-  height: 22%;
-  background: white;
+  height: 10%;
+  background: #323232;
+  z-index: 300;
 
 }
 
@@ -127,13 +200,13 @@ html, body {
 }
 
 .myPicture {
-  height: 95%;
-  z-index: 30;
+  height: 96%;
+  z-index: 10;
 }
 
 .myIntroduce {
-  height: 95%;
-  z-index: 30;
+  height: 96%;
+  z-index: 10;
   color: #323232;
 }
 
@@ -210,12 +283,10 @@ html, body {
     width: 0;
     border-bottom: 1px solid #323232;
     z-index: 3;
-    
   }
   100% {
     width: 100%;
     border-bottom: 1px solid #323232;
-    
     z-index: 3;
   }
 }
@@ -295,20 +366,27 @@ html, body {
     border-left-color: #323232;
   }
 }
+
 .typed {
-  font-size: 5vw;
+  margin-top: 5%;
+  float:left;
+  font-size: 4.5vw;
+  background-image: url("/public/codePicture.png");
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  display: block;
 }
+
+.chrisLee {
+  float: left;
+  margin-left: 2vw;
+}
+
 
 .typed2 {
+  clear:both;
   margin-left: 10%;
   font-size: 3vw;
-}
-.spaceDiv {
-  margin: 18% 0;
-}
-
-.spaceDiv2 {
-  margin: 20% 0;
 }
 
 .openButton {
@@ -326,7 +404,18 @@ html, body {
   top: 50%;
   right: 650%; */
   left: 48%;
-  bottom: 20%;
+  bottom: 15%;
+  z-index: 99999;
+  display: block;
+}
+
+.arrow2{
+  position: fixed;
+  width: 2%;
+  height: 7%;
+  cursor: pointer;
+  left: 48%;
+  bottom: 1%;
   z-index: 99999;
   display: block;
 }
@@ -388,13 +477,14 @@ html, body {
   }
 }
 
-#orderFirst, #orderSecond,#orderThrid,#orderFourth,#orderFifth,#orderSixth,#orderSeventh,#orderEighth {
+#orderFirst, #orderSecond,#orderThrid,#orderFourth,#orderFifth,#orderSixth,#orderSeventh,#orderEighth, #orderNineth {
   display: none;
 }
 
 .aboutMe {
-  font-size: 60px;
-  margin-top: 5%;
+  font-size: 9vw;
+  text-align: center;
+  color: #323232;
 }
 
 .frameWorks {
@@ -406,8 +496,19 @@ html, body {
   clear: both;
 }
 
-.aboutMeIntro, .aboutMeBody, .aboutMeCOnClu {
-  font-size: 25px;
+.aboutMeHeader {
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 3vw;
+  color: white;
+  border-bottom: 3px solid white;
+  float: left;
+}
+
+.aboutMeIntro {
+  clear: both;
+  font-size: 1.5vw;
+  font-family: 'Dosis', sans-serif;
+  margin-top: 13%;
 }
 
 .skills {
@@ -432,11 +533,20 @@ html, body {
 }
 
 .education {
-  font-size: 60px;
+  margin-top: 5%;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 3vw;
+  color: white;
+  border-bottom: 3px solid white;
+  float: left;
 }
 
 .educationContent {
-  margin-top: 1.5%;
+  margin-top: 2%;
+  clear: both;
+  font-size: 1.5vw;
+  font-family: 'Dosis', sans-serif;
+  color: black;
 }
 
 .aboutMeLeftContent {
@@ -529,7 +639,7 @@ html, body {
   width: 100%;
   font-size: 1.8vw;
   margin-left: 8%;
-  color: #4c4a57;
+  color: #babcc1;
   font-family: 'Dosis', sans-serif;
   
 }
@@ -544,26 +654,26 @@ html, body {
 
 .githubImg {
   position: absolute;
-  top: 1.8%;
-  left: 47.5%;
-  width: 1vw;
-  height: 1vw;
+  top: 30%; 
+  right: 5%;
+  width: 1.2vw;
+  height: 1.2vw;
 }
 
 .linkdinImg {
   position: absolute;
-  top: 1.8%;
-  left: 46.5%;
-  width: 1vw;
-  height: 1vw;
+  top: 30%; 
+  right: 7%;
+  width: 1.2vw;
+  height: 1.2vw;
 }
 
 .gmailImg {
   position: absolute;
-  top: 1.8%;
-  left: 45.4%;
-  width: 1vw;
-  height: 1vw;
+  top: 30%; 
+  right: 9%;
+  width: 1.2vw;
+  height: 1.2vw;
 }
 /* 
   hover css
