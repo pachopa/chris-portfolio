@@ -8,6 +8,7 @@
   <title>Chris Lee - PortFolio</title>
 
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
@@ -46,14 +47,13 @@
                 About Me.
               </div>
             </div>
-            <div class="col-sm-5 aboutMeIntroduce">
+            <div class="col-sm-6 aboutMeIntroduce">
               <div id="orderSecond" class="aboutMeHeader animated fadeInLeft">My Introduction</div>
               <div id="orderThrid" class="aboutMeIntro animated fadeIn">
                 In 2010, I had been introduced to a Coding World for the first time through computer science in Korean University. Recently,
                 I’ve graduated a lighthouse labs which is the code academy. And every week, I have learned different languages,
                 frameworks, libraries, and environments. Thus, my strength as a junior web developer is that I am used to
                 learning new languages fast. And
-
               </div>
               <div id="orderFourth" class="education animated fadeInLeft">
                 Education
@@ -63,23 +63,71 @@
                 dummy Text dummy Text dummy Text dummy Text dummy Text
               </div>
             </div>
-            <div class="col-sm-7 aboutMeSkillsSection">
+            <div class="col-sm-6 aboutMeSkillsSection">
               <div id="orderSixth" class="aboutMeSkills animated fadeInRight">
                 Skills
               </div>
               <div id="orderSeventh" class="animated fadeIn">
-                <div class="aboutMeLanguages">Languages : </div>
-                <ul class="languagesContent">
-                  <li>Javascript</li>
-                  <li>Python</li>
-                  <li>Ruby</li>
-                  <li>Html</li>
-                  <li>Css</li>
-                </ul>
+                <table class="languagesContent">
+                  <tr>
+                    <td class="skillKind skillLanguages">Languages : </td>
+                    <td class="skillName">Ruby</td>
+                    <td class="skillName">Html</td>
+                    <td class="skillName">Javascript</td>
+                  </tr>
+                  <tbody>
+                    <td></td>
+                    <td class="skillName">Css</td>
+                    <td></td>
+                  </tbody>
+                </table>
               </div>
               <div id="orderEighth" class="animated fadeIn">
-                <div class="frameworksContent">FrameWorks, Libraries, and Environments : </div>
+                <table class="languagesContent">
+                  <tr>
+                    <td class="skillKind skillDatabase">Database : </td>
+                    <td class="skillName">PostSQL</td>
+                    <td class="skillName">MongoDB</td>
+                    <td class="skillName"></td>
+                  </tr>
+                </table>
+              </div>
+              <div id="orderNinth" class="animated fadeIn">
+                <table class="languagesContent">
+                  <tr>
+                    <td class="skillKind">FrameWorks,</td>
+                    <td class="skillName">Express</td>
+                    <td class="skillName">Jquery</td>
+                    <td class="skillName">Bootstrap</td>
+                  </tr>
+                  <tbody>
+                    <td class="skillKind">Wireframes,</td>
+                    <td class="skillName">EJS</td>
+                    <td class="skillName">NodeJS</td>
+                    <td class="skillName">ReactJS</td>
+                  </tbody>
+                  <tr>
+                    <td class="skillKind">Environments : </td>
+                    <td class="skillName">Sass</td>
+                    <td class="skillName">Ajax</td>
+                    <td class="skillName">Ruby On Rails</td>
+                  </tr>
+                  <tr>
+                    <td class="skillName"></td>
+                    <td class="skillName">Knex</td>
+                    <td class="skillName">AJX</td>
+                    <td class="skillName">Socket.IO</td>
+                  </tr>
 
+                </table>
+              </div>
+              <div id="orderTenth" class="animated fadeIn">
+                <table class="languagesContent">
+                  <tr>
+                    <td class="skillKind skillCMS">CMS : </td>
+                    <td class="skillName">Wordpress</td>
+                  </tr>
+                </table>
               </div>
             </div>
           </div>
@@ -111,14 +159,17 @@
     <a href="https://github.com/shinmike/scortch"><img class="githubImg" src="/public/github2.png" /></a>
     <a href="https://www.linkedin.com/in/lee-chris-a569b4123/"><img class="linkdinImg" src="/public/linkdin.png" /></a>
     <a href="https://github.com/shinmike/scortch"><img class="gmailImg" src="/public/gmail.png" /></a>
-
+  </div>
+  <div id="footer">
+    <p class="ScrollDown">Scroll↓</p>
 
   </div>
   <div id="fullpage" class="fullpage">
+
     <section class="vertical-scrolling">
       <div class="slide" data-anchor="slide1">
         <div class="container-fluid project">
-          <p class="ScrollDown">Scroll↓</p>
+
           <div class="row-fluid projectRow">
             <div class="col-sm-4 projectLeftField">
               <div class="scortch">
@@ -156,6 +207,145 @@
                               <td>Ajax</td>
                               <td>Socket.IO</td>
                             </tr>
+                            <tr>
+                              <td>Bootstrap</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide" data-anchor="slide1">
+        <div class="container-fluid project">
+          <div class="row-fluid slideContent">
+            <img class="portFolioPicture" src="/public/scortchCard.png" />
+          </div>
+        </div>
+      </div>
+      <div class="slide" data-anchor="slide2">
+        <div class="container-fluid project">
+          <div class="row-fluid slideContent">
+            <img class="portFolioPicture" src="/public/scortchChatting.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="vertical-scrolling">
+      <div class="slide" data-anchor="slide1">
+        <div class="container-fluid project">
+          <div class="row-fluid projectRow">
+            <div class="col-sm-4 projectLeftField">
+              <div class="scortch">
+                <div class="jungleName">Jun<span style="color:#f8f8f8;font-weight:bold">gle.</span></div><br>
+              </div>
+            </div>
+            <div class="col-sm-8 projectRightField jungleAppRightField">
+              <div class="projectContent">
+                <div class="container-fluid projectContent">
+                  <div class="row-fluid projectContent">
+                    <div class="col-sm-4 projectContent">
+
+                    </div>
+                    <div class="col-sm-8 projectContent scortchContent">
+                      <div class="projectDescription">Project Description</div>
+                      <div class="projectDescriptionContent link-2">Chatting between users in real time using React and WebSockets. Users can send messages, see a list
+                        of users' number on the navbar and once user's name changed, it is published the message on the chatting
+                        section.
+                      </div>
+                      <div class="borderBox2">
+                        <div class="techDescription">Technologies Used </div>
+                        <table class="projectSkillTable">
+                          <thead>
+                            <td>Rails</td>
+                            <td>Html</td>
+                            <td>Bootstrap</td>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Ruby</td>
+                              <td>Sass</td>
+                              <td>Active Record</td>
+                            </tr>
+                            <tr>
+                              <td>Css</td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide" data-anchor="slide1">
+        <div class="container-fluid project">
+          <div class="row-fluid slideContent">
+            <img class="portFolioPicture" src="/public/jungleMain.png" />
+          </div>
+        </div>
+      </div>
+      <div class="slide" data-anchor="slide2">
+        <div class="container-fluid project">
+          <div class="row-fluid slideContent">
+            <img class="portFolioPicture" src="/public/jungleAdmin.png" />
+          </div>
+        </div>
+      </div>
+      <div class="slide" data-anchor="slide3">
+        <div class="container-fluid project">
+          <div class="row-fluid slideContent">
+            <img class="portFolioPicture" src="/public/jungleProduct.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="vertical-scrolling">
+      <div class="slide" data-anchor="slide1">
+        <div class="container-fluid project">
+          <div class="row-fluid projectRow">
+            <div class="col-sm-4 projectLeftField">
+              <div class="scortch">
+                <div class="chattyName">Cha<span style="color:#f8f8f8;font-weight:bold">tty.</span></div><br>
+              </div>
+            </div>
+            <div class="col-sm-8 projectRightField chattyAppRightField">
+              <div class="projectContent">
+                <div class="container-fluid projectContent">
+                  <div class="row-fluid projectContent">
+                    <div class="col-sm-4 projectContent">
+
+                    </div>
+                    <div class="col-sm-8 projectContent scortchContent">
+                      <div class="projectDescription">Project Description</div>
+                      <div class="projectDescriptionContent link-2">Chatting between users in real time using React and WebSockets. Users can send messages, see a list
+                        of users' number on the navbar and once user's name changed, it is published the message on the chatting
+                        section.
+                      </div>
+                      <div class="borderBox2">
+                        <div class="techDescription">Technologies Used </div>
+                        <table class="projectSkillTable">
+                          <thead>
+                            <td>Express</td>
+                            <td>WebSocket</td>
+                            <td>ReactJS</td>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Sass</td>
+                              <td>Jsx</td>
+                              <td>NodeJS</td>
+                            </tr>
                           </tbody>
                         </table>
                       </div>
@@ -169,23 +359,44 @@
       </div>
       <div class="slide" data-anchor="slide2">
         <div class="container-fluid project">
-          <img class="portFolioPicture" src="/public/scortchCard.png" />
+          <div class="row-fluid slideContent">
+            <img class="portFolioPicture" src="/public/chattyApp.png" />
+          </div>
         </div>
       </div>
-      <div class="slide" data-anchor="slide3">
+    </section>
+
+    <section class="vertical-scrolling">
+      <div class="slide" data-anchor="slide1">
         <div class="container-fluid project">
-          <img class="portFolioPicture" src="/public/scortchChatting.png" />
+          <div class="row-fluid projectRow">
+            <div class="col-sm-5 projectLeftField">
+              My picture
+            </div>
+            <div class="col-sm-7 projectRightField contactMeRightField">
+              <div class="contactMeHeader">Contact Me</div>
+              <form id="contactForm">
+                <div>
+                  <input type="text" name="userName" class="userName" placeholder="Name" />
+                  <input type="text" name="userEmail" class="userEmail" placeholder="Email" />
+                </div>
+                <div>
+                  <input type="text" name="subject" class="subject" placeholder="Subject" />
+                </div>
+                <div>
+                  <textarea type="text" name="message" class="message" placeholder="Message"></textarea>
+                </div>
+                <div>
+                  <button class="sendButton">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section class="vertical-scrolling">
-      third section
-    </section>
-    <section class="vertical-scrolling">
-      fourth section
-    </section>
-    <section class="vertical-scrolling">
-      fifth section
+      test
     </section>
   </div>
 
@@ -197,8 +408,6 @@
   <script src="js/jquery.easings.min.js"></script>
   <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
   <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-  <script src="js/followMouseOver.js" type="text/javascript"></script>
-
   <script src="js/main.js" type="text/javascript"></script>
 
 </body>

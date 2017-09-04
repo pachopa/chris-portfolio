@@ -3,7 +3,7 @@ $(function () {
   var backgroundColor = ['rgb(43, 188, 239)', 'rgb(181, 241, 38)', 'rgb(254, 194, 43)', 'rgb(255, 95, 6)', 'rgb(73, 226, 214)', 'rgb(181, 241, 38)', 'rgb(247, 30, 97)', 'rgb(165, 64, 254)'];
 
 
-  $('.ScrollDown').hide();
+  $('#footer').hide();
   //sidebar toggle
   $('.openButton').on('click', function (e) {
     e.preventDefault();
@@ -11,10 +11,7 @@ $(function () {
     $('.typed2').hide();
     $('.arrow').hide();
 
-    $('.githubImg').show();
-    $('.linkdinImg').show();
-    $('.gmailImg').show();
-    $('.ScrollDown').show();
+    // $('.ScrollDown').show();
     fullpage();
     const $order = $("div[id^='order']");
     console.log($order);
@@ -43,6 +40,7 @@ $(function () {
 
   //sidebar toggle
   $('.sidebarButton').on('click', function (e) {
+    $('#footer').show();
     $('#firstPage').toggle(700)
     $('.sidebar.top').slideToggle(700, function () {
     })
@@ -51,9 +49,9 @@ $(function () {
   //img slider for portfolio 
   
 
-  function fullpage() {
+  // function fullpage() {
     $('#fullpage').fullpage({
-      sectionsColor: ['#B8AE9C', '#348899', '#F2AE72', '#5C832F', '#B8B89F', '#348899'],
+      sectionsColor: ['white', 'white', 'white', '#5C832F', '#B8B89F', '#348899'],
       sectionSelector: '.vertical-scrolling',
       navigation: false,
       anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection'],
@@ -68,7 +66,7 @@ $(function () {
         console.log(anchor, index)
       }
     })
-  }
+  // }
   //fullpage js
 
 
