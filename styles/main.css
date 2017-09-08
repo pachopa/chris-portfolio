@@ -11,13 +11,6 @@ html, body {
   height: 100%;
 }
 
-/* .sidebarButton {
-  z-index: 999999;
-  position: fixed;
-  bottom: 0%;
-  left: 50%;
-} */
-
 .aboutMeHeight {
   height: 25%;
   background: #f8f8f8;
@@ -44,35 +37,33 @@ html, body {
 .aboutMeIntroduce {
   height: 75%;
   padding: 1.5%;
-  background: 	#392e6d;
-  color: black;
+  background: 	#d7d7d7;
+  color: #babcc1;
 }
 
 .aboutMeSkillsSection {
   height: 75%;
-  background: #392e6d;
+  background: #d7d7d7;
 }
 
 .aboutMeSkills {
-  color: white;
+  color: #323232;
   font-size: 3vw;
-  font-family: 'Baloo Bhaijaan', cursive;
-  border-bottom: 3px solid white;
   margin-top: 3%;
 }
 
 .languagesContent {
-  color: #babcc1;
+  color: #606060;
   clear: both;
   width: 100%;
-  margin-top: 3%;
+  margin-top: 2%;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .skillKind {
-  font-family: 'Baloo Bhaijaan', cursive;
   font-size: 1.7vw;
   width: 38%;
-  color: white;
+  color: #323232;;
 }
 
 .skillLanguages, .skillCMS {
@@ -87,22 +78,9 @@ html, body {
   font-size: 1.5vw;
 }
 
-.frameworksContent {
-  color: white;
-  font-family: 'Baloo Bhaijaan', cursive;
-  font-size: 2vw;
+.postSQL {
+  width: 19%;
 }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-}
-
 
 .homepage {
   width: 100%;
@@ -137,15 +115,11 @@ li {
 
 .aboutMeMiddleLine {
   width: 1px;
-  /* background: white; */
   position: absolute;
   top: 35%;
   right: 50%;
   height: 1%;
-  /* -webkit-animation: dude 2s 1 forwards;
-  -moz-animation: dude 2s 1 forwards;
-  -o-animation: dude 2s 1 forwards;
-  animation: dude 2s 1 forwards; */
+
   z-index: 60;
   word-wrap: break-word;
   font-family: monospace;
@@ -173,207 +147,18 @@ li {
   background: white;
 }
 
-
-@-webkit-keyframes dude {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 100%;
-  }
-}
-@-moz-keyframes dude {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 100%;
-  }
-}
-@-o-keyframes dude {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 100%;
-  }
-}
-@keyframes dude {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 100%;
-  }
-}
-
 .myPicture {
   height: 96%;
-  z-index: 10;
 }
 
 .myIntroduce {
   height: 96%;
-  z-index: 10;
   color: #323232;
 }
 
 /* 
   create right box white line border
 */
-
-.rightBoxBorderLine {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: -1%;
-  z-index: 3;
-}
-
-.rightBoxBorderLine:before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  background: transparent;
-  border: 1px solid transparent;
-  animation: animate 1s linear forwards;
-  z-index: -1;
-}
-
-@keyframes animate {
-  0% {
-    width: 0;
-    height: 0;
-    border-top-color: #323232;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: #323232;
-    z-index: 3;
-  }
-  
-  50% {
-    width: 100%;
-    height: 0;
-    border-top-color: #323232;
-    border-right-color: #323232;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    z-index: 3;
-  }
-
-  100% {
-    width: 100%;
-    height: 100%;
-    border-top-color: #323232;
-    border-right-color: #323232;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    z-index: 3;
-  }
-}
-
-.rightBoxBorderLine:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 2;
-  border: 1px solid transparent;
-  animation: animate2 1s linear forwards;
-  animation-delay: 1s;
-  z-index: 3;
-}
-
-@keyframes animate2 {
-  0% {
-    width: 0;
-    border-bottom: 1px solid #323232;
-    z-index: 3;
-  }
-  100% {
-    width: 100%;
-    border-bottom: 1px solid #323232;
-    z-index: 3;
-  }
-}
-
-
-/* 
-  create left box white line border
-*/
-
-.leftBoxBorderLine {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0; 
-}
-
-.leftBoxBorderLine:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 0;
-  height: 2;
-  border: 1px solid transparent;
-  animation: leftbox 1s linear forwards;
-}
-
-@keyframes leftbox {
-  0% {
-    width: 0;
-    border-top: 1px solid #323232;
-    
-  }
-  100% {
-    width: 100%;
-    border-top: 1px solid #323232;
-    
-  }
-}
-
-.leftBoxBorderLine:after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  background: transparent;
-  border: 1px solid transparent;
-  animation: leftbox2 1s linear forwards;
-  animation-delay: 1s; 
-}
-
-@keyframes leftbox2 {
-  0% {
-    width: 0;
-    height: 0;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: #323232;
-  }
-  
-  50% {
-    width: 0;
-    height: 100%;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: #323232;
-    border-left-color: #323232;
-  }
-
-  100% {
-    width: 100%;
-    height: 100%;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: #323232;
-    border-left-color: #323232;
-  }
-}
 
 .typed {
   margin-top: 5%;
@@ -383,6 +168,7 @@ li {
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent; 
   display: block;
+  margin-left: 5%;
 }
 
 .chrisLee {
@@ -393,8 +179,8 @@ li {
 
 .typed2 {
   clear:both;
-  margin-left: 10%;
-  font-size: 3vw;
+  margin-left: 14%;
+  font-size: 2vw;
 }
 
 .openButton {
@@ -505,18 +291,18 @@ li {
 }
 
 .aboutMeHeader {
-  font-family: 'Baloo Bhaijaan', cursive;
   font-size: 3vw;
-  color: white;
-  border-bottom: 3px solid white;
+  color: #323232;
   float: left;
 }
 
 .aboutMeIntro {
   clear: both;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   font-family: 'Quicksand', sans-serif;
   margin-top: 13%;
+  padding: 0 20px 5px 5px;
+  color: #606060;
 }
 
 .skillsContent {
@@ -537,19 +323,17 @@ li {
 
 .education {
   margin-top: 5%;
-  font-family: 'Baloo Bhaijaan', cursive;
   font-size: 3vw;
-  color: white;
-  border-bottom: 3px solid white;
+  color: #323232;
   float: left;
 }
 
 .educationContent {
   margin-top: 2%;
   clear: both;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   font-family: 'Quicksand', sans-serif;
-  color: black;
+  color: #606060;
 }
 
 .aboutMeLeftContent {
@@ -567,8 +351,9 @@ li {
 
 .projectLeftField, .projectRightField, .projectRow , .project, .scortch, .projectContent {
   height: 100%;
-  /* min-height: 100%; */
+  max-height: 1100px;
 }
+
 .project {
   background-color: white;
 }
@@ -587,7 +372,7 @@ li {
 }
 
 .slideContent {
-  height: 91%;
+  height: 100%;
 }
 
 .chattyName {
@@ -621,22 +406,22 @@ li {
 .contactMeRightField {
   padding: 0;
   background: #2e2e2e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contactMeHeader {
-  font-size: 6vw;
+  font-size: 5vw;
   text-align: center;
   color: white;
-  margin-top: 2%;
+  margin-bottom: 4%;
 }
 
 .jungleAppRightField {
   background: #a9c853;
   padding: 0;
-}
-.scortchPicture {
-  width: 100%;
-  height: auto;
 }
 
 .projectContent {
@@ -648,42 +433,84 @@ li {
   width: 60%;
 }
 
+.scortchPicture {
+  background-image: url('../public/baseball2.jpg');
+  width: 100%;
+  padding: 0;
+  height: 100%;
+  background-size: cover;
+}
+
+.scortchPicture2 {
+  background-image: url('../public/baseball.jpg');
+  width: 100%;
+  padding: 0;
+  height: 100%;
+  background-size: cover;
+}
+
+.junglePicture {
+  background-image: url('../public/furniture.jpg');
+  width: 100%;
+  padding: 0;
+  height: 100%;
+  background-size: cover;
+}
+
+.junglePicture2 {
+  background-image: url('../public/furniture2.jpg');
+  width: 100%;
+  padding: 0;
+  height: 100%;
+  background-size: cover;
+}
+
+.chattyPicture {
+  background-image: url('../public/chatting.jpg');
+  width: 100%;
+  padding: 0;
+  height: 100%;
+  background-size: cover;
+}
+
+.chattyPicture2 {
+  background-image: url('../public/chatting2.jpg');
+  width: 100%;
+  padding: 0;
+  height: 100%;
+  background-size: cover;
+}
+
 .projectDescription {
-  font-size: 4.2vw;
-  color: white;
-  margin-top: 15%;
-  font-family: 'Baloo Bhaijaan', cursive;
-  border-bottom: 3px solid white;
+  font-size: 3vw;
+  color: #323232;
+  margin-top: 25%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 96%;
 }
 
 .projectDescriptionContent {
-  width: 95%;
-  font-size: 1.5vw;
-  /* font-family: "Cabin", sans-serif; */
-  /* font-family: 'Montserrat', sans-serif; */
-  /* font-family: 'Montaga', serif; */
-  /* font-family: 'Montserrat Alternates', sans-serif; */
+  width: 100%;
+  font-size: 1.2vw;
   font-family: 'Quicksand', sans-serif;
-  color: #323232;
+  color: #606060;
   margin-top: 2%;
-  margin-left: 3%;
+  padding-right: 2%;
 }
 
 .techDescription {
-  font-size: 4vw;
-  color: white;
-  margin-top: 2%;
-  font-family: 'Baloo Bhaijaan', cursive;
-  /* border-bottom: 1px solid white; */
+  font-size: 3.2vw;
+  color: #323232;
+  margin-top: 7%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .projectSkillTable {
+  color: #606060;
   width: 100%;
-  font-size: 1.8vw;
-  margin-left: 8%;
-  color: #babcc1;
-  font-family: 'Dosis', sans-serif;
-  
+  font-size: 1.3vw;
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 2%;
 }
 
 .githubLink {
@@ -769,15 +596,6 @@ li {
 a:hover {
   color: black;
   text-decoration: none;
-}
-
-.borderBox {
-  width: 100%;
-  height: 40%;  
-  background: #1c1b20;
-  padding: 1vw;
-  border-radius: 2.5vw;
-  margin-top: 7%;
 }
 
 .borderBox2 {
@@ -923,9 +741,46 @@ p {
   border-color: transparent black transparent transparent;
 }
 
-.portFolioPicture {
+.scortchProjectPic {
   width: 100%;
   height: 100%;
+  background-image: url('../public/scortchCard.png');
+  background-size: cover;
+}
+
+.scortchProjectPic2 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/scortchChatting.png');
+  background-size: cover;
+}
+
+.jungleProjectPic{
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/jungleMain.png');
+  background-size: cover;
+}
+
+.jungleProjectPic2{
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/jungleAdmin.png');
+  background-size: cover;
+}
+
+.jungleProjectPic3{
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/jungleProduct.png');
+  background-size: cover;
+}
+
+.chattyProjectPic {
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/chattyApp.png');
+  background-size: cover;
 }
 
 #navbar {
@@ -972,6 +827,10 @@ textarea:focus, input:focus{
 
 #contactForm {
   text-align: center;
+  width: 100%;
+}
+.formHeader, .formSubject, .formMessage {
+  position: relative;
 }
 
 .userName, .userEmail {
@@ -982,7 +841,14 @@ textarea:focus, input:focus{
   margin-right: 1%;
   font-size: 1.2vw;
   padding: 2%;
+  border: 0;
 }
+
+.userName ~ .focus-border{position: absolute; bottom: 0; left: 18.7%;; width: 0; height: 1px; background-color: white; transition: 0.4s;}
+.userName:focus ~ .focus-border{width: 30%; transition: 0.4s;}
+
+.userEmail ~ .focus-border2{position: absolute; bottom: 0; left: 50.2%; width: 0; height: 1px; background-color: white; transition: 0.4s;}
+.userEmail:focus ~ .focus-border2{width: 30%; transition: 0.4s;}
 
 .subject, .message {
   margin-top: 2%;
@@ -993,7 +859,16 @@ textarea:focus, input:focus{
   height: 4vw;
   font-size: 1.2vw;
   padding: 2%;
+  border: 0;
 }
+
+.subject ~ .focus-border{position: absolute; bottom: 0; left: 18.5%; width: 0; height: 1px; background-color: white; transition: 0.4s;}
+.subject:focus ~ .focus-border{width: 62%; transition: 0.4s;}
+
+
+.message ~ .focus-border{position: absolute; bottom: 2%; left: 18.5%; width: 0; height: 2px; background-color: white; transition: 0.4s;}
+.message:focus ~ .focus-border{width: 62%; transition: 0.4s;}
+
 
 .message {
   height: 11vw;
@@ -1022,22 +897,27 @@ textarea:focus, input:focus{
   color: #252627;
 }
 
+ul.contactLists {
+  position: absolute;
+  bottom: 0;
+  color: black;
+  list-style-type: none;
+  display: inline-block;
+  left: 55%;
+}
 
+.contactNum, .contactEmail {
+  float: left;
+  letter-spacing: 3px;
+  text-indent: 1.5vw;
+  font-size: 1vw;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.alertify-notifier.ajs-right .ajs-message.ajs-visible {
+  left: 10%;
+  background: #f8f8f8;
+  color: #323232;
+  text-shadow: none;
+  font-size: 1.1vw;
+  font-family: 'Quicksand', sans-serif;
+}
