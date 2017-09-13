@@ -300,7 +300,6 @@ html, body {
   clear: both;
   font-size: 1.3vw;
   font-family: 'Quicksand', sans-serif;
-  margin-top: 13%;
   padding: 0 20px 5px 5px;
   color: #606060;
 }
@@ -322,20 +321,26 @@ html, body {
 }
 
 .education {
-  margin-top: 5%;
   font-size: 3vw;
   color: #323232;
   float: left;
 }
 
 .educationContent {
-  margin-top: 2%;
   clear: both;
   font-size: 1.3vw;
   font-family: 'Quicksand', sans-serif;
   color: #606060;
 }
 
+.educationDetail {
+  padding: 0;
+  margin: auto;
+}
+
+.lighthouselabs {
+  padding-left: 4%;
+}
 .aboutMeLeftContent {
   text-align: right;
   padding: 0 3%;
@@ -484,7 +489,7 @@ html, body {
 .projectDescription {
   font-size: 3vw;
   color: #323232;
-  margin-top: 25%;
+  margin-top: 33%;  
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: 96%;
 }
@@ -802,14 +807,6 @@ p {
 }
 
 
-@media only screen and (max-width: 900px) {
-  .typed {
-    font-size: 60px;
-  }
-  .typed2 {
-    font-size: 40px;
-  }
-}
 
 /* contact form */
 textarea {
@@ -913,11 +910,45 @@ ul.contactLists {
   font-size: 1vw;
 }
 
-.alertify-notifier.ajs-right .ajs-message.ajs-visible {
-  left: 10%;
-  background: #f8f8f8;
+.alertify-notifier .ajs-message {
+  width: 19vw;
+}
+
+.alertify-notifier.ajs-left .ajs-message.ajs-visible {
+  right: 21vw;
+  bottom: 3vw;
+  background: none;
   color: #323232;
   text-shadow: none;
-  font-size: 1.1vw;
-  font-family: 'Quicksand', sans-serif;
+  font-size: 1.7vw;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  border: none;
+}
+
+.alertify-notifier.ajs-bottom {
+  bottom: 40%;
+}
+
+.fillBlank {
+  float: left;
+  color: #8d8d8d;
+  margin-left: 18.5%;
+  font-size: 2.2vw;
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+  .typed {
+    font-size: 60px;
+    margin-left: 0;
+  }
+  .typed2 {
+    font-size: 40px;
+    margin-left: 3%;
+  }
+  h1 {
+    margin: 0;
+  }
 }

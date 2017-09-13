@@ -5,6 +5,7 @@ $(function () {
   $('#footer').hide();
   // $('.openButton').hide();
   // $('.arrow2').hide();
+  $('#fullpage').hide();
   //sidebar toggle
   $('.openButton').on('click', function (e) {
     e.preventDefault();
@@ -18,6 +19,7 @@ $(function () {
     $('.sidebar.top').slideToggle(700, function () {
       // $('.aboutAllContent').show()
       // $('#orderFirst').delay(500).fadeIn(0).addClass("animated fadeInDown")
+      $("#fullpage").show();
       var time = 300;
       $order.each(function (index, val) {
         // console.log($(this));
@@ -35,7 +37,6 @@ $(function () {
   $('.sidebarButton').on('click', function (e) {
     var time = 100;
     $order.each(function (index, val) {
-      console.log(index, "chris93939")
       $(this).delay(time).switchClass('fadeIn', 'fadeOutUp', 1500);
       time += 50;
       // $(this).switchClass('animated ')
@@ -52,17 +53,15 @@ $(function () {
         })
       })
     }, 1000)
-
-
   })
 
   //img slider for portfolio 
   function popup() {
-    // alertify.set('notifier','position', 'bottom-right');
-    alertify.success('click the arrow button for the project');
-    setTimeout(function () {
-      alertify.success('scroll or spacebar for a new project');
-    }, 2000);
+    alertify.set('notifier', 'position', 'bottom-left');
+    alertify.success('click the arrow button for the project').delay(3);
+    // setTimeout(function () {
+    //   alertify.success('use scroll or spacebar for a new project');
+    // }, 2000);
     // alertify.message('test')
   }
 
@@ -71,16 +70,18 @@ $(function () {
       sectionsColor: ['white', 'white', 'white', 'white', 'white', 'white'],
       sectionSelector: '.vertical-scrolling',
       navigation: false,
-      anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection'],
       controlArrows: true,
       verticalCentered: true,
-      scrollingSpeed: 1100,
+      scrollingSpeed: 1200,
       css3: true,
       afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
-        console.log("chsi3-3-", anchorLink, index, slideAnchor, slideIndex)
       },
       afterLoad: function (anchor, index) {
-        console.log(anchor, index)
+        if (index == 4) {
+          $('p.ScrollDown').hide();
+        } else {
+          $('p.ScrollDown').show();
+        }
       }
     })
   }
@@ -116,6 +117,15 @@ $(function () {
     }
   })
 
+  $('input, textarea').keyup(function () {
+    var name = $('.userName').val();
+    var email = $('.userEmail').val();
+    var subject = $('.subject').val();
+    var message = $('.message').val();
+    if (name != '' && email != '' && subject != '' && message != '') {
+      $('.fillBlank').fadeOut();
+    }
+  })
   $('button.sendButton').click(function () {
     var $contactForm = $('#contactForm');
     var $contactFormFeedBack = '';
@@ -123,24 +133,23 @@ $(function () {
     var email = $('.userEmail').val();
     var subject = $('.subject').val();
     var message = $('.message').val();
+    if (name == '' || email == '' || subject == '' || message == '') {
+      $('.fillBlank').fadeIn();
+    } else {
+      $.ajax({
+        type: "POST",
+        url: "send-email.php",
+        data: { name: name, email: email, subject: subject, message: message }
+      }).success(function (html) {
+        $('.fillBlank').text('Thank you for your email!').fadeIn();
+        $('.userName').val('');
+        $('.userEmail').val('');
+        $('.subject').val('');
+        $('.message').val('');
+      }).error(function (html) {
 
-    console.log($contactForm
-      , $contactFormFeedBack
-      , name
-      , email
-      , subject
-      , message, "chris0101")
-    $.ajax({
-      type: "POST",
-      url: "send-email.php",
-      data: { name: name, email: email, subject: subject, message: message }
-    }).success(function (html) {
-      // $contactFormFeedBack = html;
-      console.log("success mail")
-    }).error(function (html) {
-      console.log("error")
-      // $contactFormFeedBack = '<h2>Error</h2>';
-    })
+      })
+    }
 
   });
 
